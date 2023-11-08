@@ -1,0 +1,14 @@
+<table class="ui selectable celled table" [ngClass]="className">
+  <thead>
+    <tr>
+      <th *ngFor="let header of headers">{{ header.label }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of data">
+      <td>{{ record.name }}</td>
+      <td>{{ record.age }}</td>
+      <td>{{ record.job }}</td>
+    </tr>
+  </tbody>
+</table>
